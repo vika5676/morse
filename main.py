@@ -39,3 +39,16 @@ def decode_from_morse(code):
             decoded_text.append(' ')  # Добавляем пробел для разделения слов
     return ''.join(decoded_text)
 
+
+# Основная функция
+def main():
+    while True:
+        choice = input("Хотите закодировать (1) или раскодировать (2) текст?")
+        if choice == '1':
+            text = input("Введите текст для кодирования: ")
+            print("Закодированный текст:", encode_to_morse(text))
+        elif choice == '2':
+            code = input("Введите код Морзе для декодирования: ")
+            print("Декодированный текст:", decode_from_morse(code))
+        else:
+            print("Неверный выбор, попробуйте снова.")
