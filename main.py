@@ -40,6 +40,14 @@ def decode_from_morse(code):
     return ''.join(decoded_text)
 
 
+def encode_to_morse(text):
+    encoded_messange = []
+    for i in text.upper():
+        if i in morse:
+
+encoded_messange.append(morse[i])
+
+
 # Основная функция
 def main():
     while True:
