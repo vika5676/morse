@@ -44,8 +44,9 @@ def encode_to_morse(text):
     encoded_messange = []
     for i in text.upper():
         if i in morse:
-
-encoded_messange.append(morse[i])
+            encoded_messange.append(morse[i])
+        else:
+            encoded_messange.append('?')
 
 
 # Основная функция
