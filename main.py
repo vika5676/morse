@@ -47,7 +47,7 @@ def encode_to_morse(text):
             encoded_messange.append(morse[i])
         else:
             encoded_messange.append('?')
-
+    return encoded_messange
 
 # Основная функция
 def main():
