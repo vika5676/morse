@@ -26,17 +26,6 @@ morse = {"a": ".-",
          "z": "--.."}
 
 
-def encode_to_morse(text):
-    text = text.upper()
-    morse_code = []
-    for char in text:
-        if char in MorseCode:
-            morse_code.append(MorseCode[char])
-        elif char == ' ':
-            morse_code.append(' ')
-    return ' '.join(morse_code)
-
-
 # Функция декодирования
 def decode_from_morse(code):
     code = code.split(' ')  # Разделяем код по пробелам
